@@ -1,0 +1,109 @@
+--------------------------------------------------------------------------
+Some of the Multiple Choice Questions from Midterm Test Exercise 1 and 2:
+--------------------------------------------------------------------------
+PROBLEM 1
+Suppose x = "pi" and y = "pie". The line of code x, y = y,
+x will swap the values of x and y, resulting in x = "pie" and y = "pi".
+
+Ans - True
+
+--------------------------------------------------------------------------
+PROBLEM 2
+Suppose x is an integer in the following code:
+def f(x):
+    while x > 3:
+        f(x+1)
+For any value of x, all calls to f are guaranteed to never terminate.
+
+Ans - False
+
+--------------------------------------------------------------------------
+PROBLEM 3
+A Python program always executes every line of code written at least once.
+
+Ans - False
+
+--------------------------------------------------------------------------
+PROBLEM 4
+Suppose you have two different functions that each assign a variable 
+called x. Modifying x in one function means you always modify x in the 
+other function for any x.
+
+Ans - False
+
+--------------------------------------------------------------------------
+PROBLEM 5
+Assume a break statement is executed inside a function. The function call 
+will always terminate without executing any remaining code inside that 
+function.
+
+Ans - False
+
+-------------------------------------------------------------------------
+PROBLEM 6
+A program that keeps running and does not stop is an example of a 
+syntax error.
+
+Ans - False
+
+-------------------------------------------------------------------------
+PROBLEM 7
+A tuple can contain a list as an element.
+
+Ans - True
+
+-------------------------------------------------------------------------
+PROBLEM 8
+Assume f() is defined. In the statement a = f(), a is always a function.
+
+Ans - False
+
+-------------------------------------------------------------------------
+PROBLEM 9
+Assume the statement s[1024] = 3 does not produce an error message. 
+This implies:
+
+type(s) can be str
+type(s) can be tuple
+type(s) can be list  <--- Correct
+All of the above
+
+-------------------------------------------------------------------------
+PROBLEM 10
+Examine the following code snippet:
+
+for thing in stuff:
+    if thing == 'iQ':
+        print "Found it"
+
+stuff  = ["iBoy", "iGirl", "iQ", "iC","iPaid","iPad"]      <--- Correct
+stuff  = ("iBoy", "iGirl", "iQ", "iC","iPaid","iPad")      <--- Correct
+stuff  = [ ( "iBoy", "iGirl", "iQ", "iC","iPaid","iPad") ]
+stuff  = ( [ "iBoy", "iGirl", "iQ", "iC","iPaid","iPad" ], )
+stuff  = ["iQ"]                       <------------------------ Correct  
+stuff  = 'iQ'
+
+-------------------------------------------------------------------------
+PROBLEM 11
+The following Python code is supposed to compute the square of an 
+integer by using successive additions.
+
+def Square(x):
+    return SquareHelper(abs(x), abs(x))
+
+def SquareHelper(n, x):
+    if n == 0:
+        return 0
+    return SquareHelper(n-1, x) + x
+Not considering recursion depth limitations, what is the wrong with this 
+implementation of procedure Square? Check all that apply.
+
+It is going to return a wrong value.
+The term Square is a reserved Python keyword.
+Function names cannot start with a capital letter.
+The function is never going to return anything.
+Python has arbitrary precision arithmetic.
+This function will not work for negative numbers.
+The call SquareHelper(abs(x), abs(x)) won't work because you can't have 
+abs(x) as both parameters.
+Nothing is wrong; the code is fine as-is.             <-------- Correct
