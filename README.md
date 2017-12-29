@@ -8,4 +8,4 @@ This repository contains solutions to the -
   * Midterm Exam and Final Exam
   
 This repository does not contain solutions to the -
-  * finger exercises
+  * Finger exercises
